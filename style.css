@@ -55,6 +55,7 @@ body {
 
 .container-top-ratings {
     width: 500px;
+    min-width: 320px;
     display: flex;
     flex-direction: column;
     justify-content: center;
