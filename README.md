@@ -1,7 +1,5 @@
 # Frontend Mentor - Social proof solution
 
-This is a solution to the [Order summary card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj). 
-
 ## Overview
 
 ### Screenshot
@@ -10,7 +8,7 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 
 ### Links
 
-- Solution URL: Working on it.
+- Solution URL: https://viniciusdsv93.github.io/Social-proof/
 
 ## My process
 
