@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Spartan', sans-serif;
+}
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat no-repeat;
+    background-position: right 50vw bottom 50vh, left 10vw top 10vh;
+}
+
+.container {
+    width: 80%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-top {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+.container-top-text {
+    display: flex;
+    flex-direction: column;
+    max-width: 380px;
+    min-width: 320px;
+}
+.container-top-text h1 {
+    color: hsl(300, 43%, 22%);
+    font-size: 40px;
+    padding-bottom: 7px;
+    line-height: 40px;
+}
+
+.container-top-text p {
+    font-size: 12px;
+    color: hsl(300, 43%, 22%);
+    line-height: 20px;
+}
+
+.container-top-ratings {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.container-top-ratings .rating {
+    background-color: hsl(300, 24%, 96%);
+    max-width: 380px;
+    min-width: 320px;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-size: 12px;
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#rating-1 {
+    margin-left: 0%;
+}
+
+#rating-2 {
+    margin-left: 8%;
+}
+
+#rating-3 {
+    margin-left: 16%;
+}
+
+.stars img {
+    width: 15px;
+    height: auto;
+}
+
+.cards {
+    display: flex;
+    gap: 30px;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.card-item {
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 5px;
+    padding: 30px;
+    color: hsl(0, 0%, 100%);
+    max-height: 200px;
+}
+
+.card-item--info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.card-item--info img {
+    width: 30px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.info--name-job {
+    display: flex;
+    flex-direction: column;
+}
+
+.info--name-job p {
+    color: hsl(333, 80%, 67%);
+}
+
+#card-item-1 {
+    margin-top: 0%;
+}
+
+#card-item-2 {
+    margin-top: 2%;
+}
+
+#card-item-3 {
+    margin-top: 4%;
+}
+
+.attribution {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    position: absolute;
+    padding-bottom: 10px;
+    gap: 3px;
+}
+
+.attribution a {
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+}
+
+.attribution a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 1070px) {
+
+    body {
+        height: max-content;
+        padding-top: 100px;
+    }
+
+    .container {
+        min-width: 320px;
+    }
+
+    .container-top {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-top-text {
+        text-align: center;
+    }
+
+    .container-top-text h1 {
+        padding-bottom: 20px;
+    }
+
+    .container-top-text p {
+        padding-bottom: 20px;
+    }
+
+    #rating-1,
+    #rating-2,
+    #rating-3 {
+        margin: auto;
+    }
+
+    .container-top-ratings .rating {
+        flex-direction: column;
+        min-width: 320px;
+    }
+
+    .container-top-ratings {
+        gap: 15px;
+    }
+
+    .cards {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-width: 320px;
+        gap: 15px;
+    }
+
+    #card-item-1,
+    #card-item-2,
+    #card-item-3 {
+        margin: auto;
+        min-width: 320px;
+        max-width: 380px;
+    }
+
+    .attribution {
+        padding-top: 30px;
+        position: relative;
+        font-size: 14px;
+    }
+}
