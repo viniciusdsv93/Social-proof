@@ -169,6 +169,7 @@ body {
     body {
         height: max-content;
         padding-top: 100px;
+        overflow-x: hidden;
     }
 
     .container {
